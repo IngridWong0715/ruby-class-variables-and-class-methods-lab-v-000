@@ -5,7 +5,7 @@ class Song
   attr_accessor :name, :artist, :genre
   def initialize
     @@count ++
-    @@artists << artist
+    @@artists << artist if !@@artists.include?(artist)
     @@genres << genre
   end
 
