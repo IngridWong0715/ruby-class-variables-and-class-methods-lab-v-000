@@ -46,7 +46,7 @@ class Song
   def self.artist_count
     @@artists.reduce({}) do |acc, artist|
       #binding.pry
-      if acc.artist == nil
+      if acc[artist[] == nil
         acc[artist]== 1
       else
         acc[artist] +=1
