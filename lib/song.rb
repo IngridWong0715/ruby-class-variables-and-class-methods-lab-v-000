@@ -47,7 +47,7 @@ class Song
     @@artists.reduce({}) do |acc, artist|
       #binding.pry
       if acc[artist] == nil
-        acc[artist]== 1
+        acc[artist]= 1
       else
         acc[artist] +=1
       end
