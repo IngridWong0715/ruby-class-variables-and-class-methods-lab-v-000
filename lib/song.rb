@@ -49,7 +49,7 @@ class Song
       if acc[artist] == nil
         acc[artist] = 1
       else
-        acc[artist] +=1
+        acc[artist] += 1
       end
     end
   end
