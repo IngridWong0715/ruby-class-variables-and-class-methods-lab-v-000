@@ -42,5 +42,15 @@ class Song
       # if it exists in genre_count, genre_count[genre] +=1
       # else genre_count[genre] = 1
 
+  def self.artist_count
+    @@artists.reduce({}) do |acc, artist|
+      if acc[artist] == nil
+        acc[artist]== 1
+      else
+        acc[artist] +=1
+    @@artists.each do |artist|
 
+    end
+
+  end
 end
