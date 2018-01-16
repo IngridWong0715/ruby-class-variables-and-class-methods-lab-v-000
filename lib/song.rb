@@ -7,4 +7,8 @@ class Song
     @@Genres << genre
   end
 
+  def self.genre_count
+    @@Genres.count
+  end
+
 end
