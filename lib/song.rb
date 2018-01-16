@@ -48,9 +48,7 @@ class Song
         acc[artist]== 1
       else
         acc[artist] +=1
-    @@artists.each do |artist|
-
+      end
     end
-
   end
 end
