@@ -33,6 +33,8 @@ class Song
         genre_count[genre] = 1
       else genre_count[genre] += 1
       end
+    end
+  end
 
     # iterate through @@genres
     # for each genre
