@@ -32,6 +32,7 @@ class Song
       if genre_count[genre]==nil
         genre_count[genre] = 1
       else genre_count[genre] += 1
+      end
 
     # iterate through @@genres
     # for each genre
