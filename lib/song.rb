@@ -44,7 +44,7 @@ class Song
       # else genre_count[genre] = 1
 
   def self.artist_count
-    @@artists.reduce({}) do |acc, artist|
+    @@artists.inject({}) do |acc, artist|
       binding.pry
       if acc[artist] == nil
         acc[artist]== 1
