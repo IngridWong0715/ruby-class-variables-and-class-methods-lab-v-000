@@ -39,20 +39,21 @@ class Song
   end
 
 
-  def self.artist_count
 
-    @@genres.reduce({}) do |acc, artist|
-      if acc[artist]==nil
-        acc[artist] = 1
-      else acc[artist] += 1
-      end
-    end
-
-  end
     # iterate through @@genres
     # for each genre
       # if it exists in genre_count, genre_count[genre] +=1
       # else genre_count[genre] = 1
 
-  
+  def self.artist_count
+    @@artists.reduce({}) do |acc, artist|
+      #binding.pry
+      if acc[artist] == nil
+        acc[artist] = 1
+      else
+        acc[artist] += 1
+      end
+      binding.pry
+    end
+  end
 end
